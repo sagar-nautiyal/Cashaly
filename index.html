@@ -5,161 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Cashlay</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-       <style>
-         body {
-           font-family: Arial, sans-serif;
-           background-color: #f4f4f4;
-           margin: 0;
-           padding: 0;
-         }
-         .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.nav-item{
-  margin-right: 2vw;
-}
-.bottom-head a{
-  float: left;
-}
-.bottom-head li{
-  margin-right: 0px !important;
-}
-.bottom-head span{
-vertical-align: middle;
-height: 1.5vh;
-display: inline-flex;
-}
-.n-bar{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.n-bar nav{
-    padding-left: 2vw;
-    padding-right: 2vw;
-
-}
-.btn-purple{
-
-  background: #5c1075;
-  color:white;
-}
-
-.nav-Right{
-  float: right;
-}
-
-         section {
-           float: right;
-           width: 70%;
-           padding: 20px;
-         }
-         .coupon-card{
-            display: grid;
-            grid-template-columns: auto auto auto ; 
-            grid-gap: 5px; 
-        }
-         aside {
-          margin-top: 10px;
-           float: left;
-           width: 30%;
-           height: 100%;
-           background-color: #F1EFEF;
-           color: #fff;
-           padding: 20px;
-           overflow-y: scroll;
-           border: 1px solid 
-         }
-
-         .accordion-button:not(.collapsed){
-          background: none;
-          outline: none;
-          
-         }
-
-         @media (max-width:800px){
-          .coupon-card{
-            grid-template-columns: 1fr;
-          }
-          .top-s{
-            width: 100%;
-            float: none;
-          }
-          .navbar-nav{
-            display: block;
-    background: rgba(0,0,0);
-    padding: 20px;
-    color: white;
-}
-
-#navbarNav{background:black;}
-#navbarNav form{
-  background: black;
-  width: 70%;
-    float: left;
-    padding-left: 2vw;
-}
-
-#navbarNav .navbar-right{
-  background:black;
-}
-
-.bottom-nav .navbar{
-  padding-top:0px;
-}
-
-.navbar-nav .nav-link{
-  color:white
-}
-.navbar{
-  margin-bottom: 0;
-    padding-bottom: 0;
-
-}
-              .b-img img{
-                   width:100%;
-              }
-
-.bottom-nav li{
-  float:left;
-}
-
-.bottom-head-bottom{
-  padding-top: 0px;
-    padding-bottom: 6vh;
-}
-
-.bottom-head a{
-  margin-right: 4px;
-    font-size: 13px;
-}
-
-.n-bar nav{
-  padding-left:0;
-  padding-right:0;
-}
-
-.bottom-head li{
-  margin-right:2vw !important;
-}
-
-.nav-Right{
-  float:none;
-  width:100%;
-}
-
- }
-               
-       </style>
+      <link rel="stylesheet" href="./style.css" />
      </head>
      <body>
       <div class="container-fluid n-bar">
@@ -230,8 +76,85 @@ display: inline-flex;
           </ol>
         </nav>
       </div>
-      <div class="container text-center b-img">
-        <img src="Myntra.png" alt="">
+      <div class="row" style="text-align: center;background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(202,18,193,1) 52%, rgba(126,0,255,1) 100%);" id="imageContainer">
+        
+        <div class="col-lg-2 col-sm-2">
+          
+        </div>
+
+        <div class="col-lg-2 col-sm-2 mynt-height">
+            <img src="https://cms.cashaly.com/storage/panel/store/LM_20210624153434.png" id="myntra" />
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="image-desc" style="padding-top: 7vh;">
+            <h3>Myntra Coupons Code & Offers today</h3>
+            <p><span>46 Coupons & Offers</span> | </p>
+            <p>Upto 6.5% Cashaly Cashback</p>
+          <!--  <a href="https://www.cashaly.com/load-offer-store/ST137RH400" class="btn btn-purple">Activate cashback</a> -->
+          <button id="openModal" class="btn btn-purple">Activate</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>GET READY FOR SOME EXCITING OFFERS</h2>
+            
+            <div class="countdown">
+              <div class="number">
+                <h2>5</h2>
+              </div>
+              
+              <div class="number">
+                <h2>4</h2>
+              </div>
+              
+              <div class="number">
+                <h2>3</h2>
+              </div>
+              
+              <div class="number">
+                <h2>2</h2>
+              </div>
+              
+              <div class="number">
+                <h2>1</h2>
+              </div>
+              
+              <div class="number">
+                <h2>.</h2>
+              </div>
+              
+              <div class="number">
+                <h2>.</h2>
+              </div>
+              
+              <div class="number">
+                <h2>.</h2>
+              </div>
+              
+              <div class="number">
+                <h2>.</h2>
+              </div>
+              
+              <div class="number">
+                <h2>.</h2>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+          </div>
+          <div class="col-lg-2 col-sm-2">
+          
+          </div>
+        </div>
+        <div class="row bot">
+          <div class="col-6" style="border-right: 1px solid #eee;">
+              <p>Tracked Within &nbsp;&nbsp;&nbsp; 3 days</p>
+          </div>
+          <div class="col-6">
+              <p>Paid Within &nbsp;&nbsp;&nbsp; 90 days</p>
+          </div>
+        </div>
+        
       </div>
        <section class="top-s">
         <div class="container">
